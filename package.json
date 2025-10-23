@@ -1,0 +1,12 @@
+{
+  "name": "solfeo-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^38.4.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+}

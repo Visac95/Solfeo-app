@@ -1,0 +1,74 @@
+/*Palette: https://coolors.co/e65f5c-fdfffc-09bc8a-004e89-1d201f
+
+E65F5C ROJO
+FDFFFC BLANCO
+09BC8A VERDE 
+004E89 AZUL
+1D201F NEGRO
+
+*/
+.montserrat-normal {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+:root {
+    --rojo: #E65F5C;
+    --blanco: #FDFFFC;
+    --verde: #09BC8A;
+    --azul: #004E89;
+    --negro: #1D201F;
+    --fondo: var(--negro);
+    --titulos: var(--azul);
+    --texto: var(--blanco);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--fondo);
+  text-align: center;
+  margin-top: 40px;
+}
+
+h1 {
+  color: var(--titulos);
+}
+
+.pentagrama {
+  position: relative;
+  display: inline-block;
+  width: 1000px;
+  height: 200px;
+  margin-top: 30px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--blanco),
+    var(--blanco) 2px,
+    transparent 2px,
+    transparent 35px
+  );
+  border: 2px solid var(--blanco);
+  border-radius: 10px;
+}
+
+.clave-sol {
+  position: absolute;
+  font-size: 120px;
+  left: 30px;
+  top: -5px;
+  color: var(--blanco);
+}
+
+.nota {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--azul);
+  border-radius: 50%;
+  left: 150px;
+  top: 95px; /* posición vertical */
+  transition: all 0.3s ease;
+}
