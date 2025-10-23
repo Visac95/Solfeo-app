@@ -6,5 +6,34 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Electron builder / dist
+# Electron build / distribución
 dist/
+out/
+release/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Mac OS
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# npm
+package-lock.json
+
+# Misc
+*.log
+*.tmp
+*.swp
+
