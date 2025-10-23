@@ -19,5 +19,5 @@ let indice = 0;
 });
 */
 
-generarNotaAleatoria
+generarNotaAleatoria();
 
