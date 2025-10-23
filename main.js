@@ -12,12 +12,12 @@ function createWindow() {
     height: 600,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,     // 🚫 no habilitamos require() en el renderer
+      contextIsolation: true      // ✅ obligatorio para seguridad
     },
   });
 
   win.loadFile('index.html');
 }
 
-app.whenReady().then(() => {
-  createWindow();
-});
+app.whenReady().then(createWindow);
