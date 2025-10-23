@@ -7,16 +7,16 @@ const botonesDiv = document.getElementById('botones');
 const boton = document.getElementById('cambiarNota');
 const nota = document.querySelector('.nota');
 
-const posiciones = [65, 80, 95, 110, 125]; // líneas y espacios
+const posiciones = [-12, 5, 22, 39, 57, 74, 93, 109, 127, 145, 162]; // líneas y espacios
 let indice = 2;
 
 boton.addEventListener('click', () => {
-  alert("CambiarNota")
+  //alert("CambiarNota")
   indice = (indice + 1) % posiciones.length;
   nota.style.top = posiciones[indice] + 'px';
 });
 
-function nuevaNota() {
+/*function nuevaNota() {
   const random = notas[Math.floor(Math.random() * notas.length)];
   notaDiv.innerText = `Nota: ${random}`;
 }
@@ -31,5 +31,5 @@ notas.forEach(n => {
   botonesDiv.appendChild(btn);
 });
 
-nuevaNota();
+nuevaNota();*/
 
