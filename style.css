@@ -22,7 +22,7 @@ FDFFFC BLANCO
     --azul: #004E89;
     --negro: #1D201F;
     --fondo: var(--negro);
-    --titulos: var(--azul);
+    --titulos: var(--verde);
     --texto: var(--blanco);
 }
 
