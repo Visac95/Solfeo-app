@@ -13,7 +13,7 @@ function createWindow() {
     //fullscreen: true,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
-      nodeIntegration: false, // 🚫 no habilitamos require() en el renderer
+      nodeIntegration: true, // 🚫 no habilitamos require() en el renderer
       contextIsolation: true, // ✅ obligatorio para seguridad
     },
   });

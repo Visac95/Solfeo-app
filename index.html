@@ -14,15 +14,72 @@
     />
   </head>
   <body>
-    <h1>PRACTICA DE SOLFEO</h1>
-
-    <div class="pentagrama">
-      <div class="clave-sol">𝄞</div>
-      <!--</div><div class="nota"></div>-->
+    <div id="pantallaInicio">
+      <h1 id="Titulo-Pantalla-Principal">PRACTICA DE SOLFEO</h1>
+      <br />
+      <button id="btnIniciar">Iniciar</button>
     </div>
-    <br />
+    <div id="pantallaPentagrama" style="display: none">
+      <h1>PRACTICA DE SOLFEO</h1>
+      <div class="pentagrama">
+        <div class="clave-sol">𝄞</div>
+      </div>
+      <div class="botones-notas-container">
+        <button
+          onclick="eligio(document.getElementById('btnC'))"
+          class="btnNotas"
+          id="btnC"
+        >
+          C
+        </button>
+        <button
+          onclick="eligio(document.getElementById('btnD'))"
+          class="btnNotas"
+          id="btnD"
+        >
+          D
+        </button>
+        <button
+          onclick="eligio(document.getElementById('btnE'))"
+          class="btnNotas"
+          id="btnE"
+        >
+          E
+        </button>
+        <button
+          onclick="eligio(document.getElementById('btnF'))"
+          class="btnNotas"
+          id="btnF"
+        >
+          F
+        </button>
+        <button
+          onclick="eligio(document.getElementById('btnG'))"
+          class="btnNotas"
+          id="btnG"
+        >
+          G
+        </button>
+        <button
+          onclick="eligio(document.getElementById('btnA'))"
+          class="btnNotas"
+          id="btnA"
+        >
+          A
+        </button>
+        <button
+          onclick="eligio(document.getElementById('btnB'))"
+          class="btnNotas"
+          id="btnB"
+        >
+          B
+        </button>
+      </div>
+      <br />
+    </div>
 
-    <button id="siguienteNota">Siguiente nota</button>
-    <script src="renderer.js" type="module"></script>
+    <script src="renderer.js"></script>
+    <script src="styles.js"></script>
+    <script src="gameLogic.js"></script>
   </body>
 </html>
