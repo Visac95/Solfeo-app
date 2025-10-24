@@ -65,7 +65,7 @@ h1 {
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color: var(--azul);
+  background-color: var(--verde);
   border-radius: 50%;
   left: 150px;
   top: 95px; /* posición vertical */

@@ -10,6 +10,7 @@ function createWindow() {
   const win = new BrowserWindow({
     width: 900,
     height: 600,
+    //fullscreen: true,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       nodeIntegration: false, // 🚫 no habilitamos require() en el renderer
@@ -17,6 +18,7 @@ function createWindow() {
     },
   });
 
+  win.maximize();
   win.loadFile("index.html");
 }
 
