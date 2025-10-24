@@ -14,16 +14,15 @@ FDFFFC BLANCO
   font-style: normal;
 }
 
-
 :root {
-    --rojo: #E65F5C;
-    --blanco: #FDFFFC;
-    --verde: #09BC8A;
-    --azul: #004E89;
-    --negro: #1D201F;
-    --fondo: var(--negro);
-    --titulos: var(--verde);
-    --texto: var(--blanco);
+  --rojo: #e65f5c;
+  --blanco: #fdfffc;
+  --verde: #09bc8a;
+  --azul: #004e89;
+  --negro: #1d201f;
+  --fondo: var(--negro);
+  --titulos: var(--verde);
+  --texto: var(--blanco);
 }
 
 body {
@@ -73,6 +72,34 @@ h1 {
   transition: all 0.3s ease;
 }
 
-#añadirNota{
-  margin-top: 50px;
+#siguienteNota {
+  margin-top: 70px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: var(--verde);
+  color: var(--azul);
+  font-size: 30px;
+  cursor: pointer;
+  width: 300px;
+  font-weight: bolder;
+}
+
+.linea-adicional{
+  position: absolute;
+  height: 2px;
+  width: 70px;
+  background-color: var(--blanco);
+  top: 12px;
+  left: -20px; 
+}
+
+.linea-vertical-pentagrama {
+  position: absolute;
+  top: -63px;
+  left: 162px; /* empieza en el borde izquierdo */
+  width: 3px;
+  height: 180%;
+  background-color: var(--rojo); /* color de la línea */
+  transition: left 0.2s ease;
 }
