@@ -24,7 +24,7 @@ function eligio(btn) {
 }
 
 // Función para obtener la notación musical según la posición
-const notacionAm = (posicion) => {
+function notacionAm (posicion) {
   if (clave == "G") {
     switch (posicion) {
       case -46:
@@ -53,6 +53,68 @@ const notacionAm = (posicion) => {
         return "D";
       case 162:
         return "C";
+      default:
+        return "Desconocida";
+    }
+  } else if (clave == "F") {
+    switch (posicion) {
+      case -46: 
+        return "C";
+      case -29:
+        return "B";
+      case -12:
+        return "A";
+      case 5:
+        return "G"; 
+      case 22:
+        return "F";
+      case 39:
+        return "E";
+      case 57:
+        return "D";
+      case 74:
+        return "C";
+      case 93:
+        return "B";
+      case 109:
+        return "A";
+      case 127:
+        return "G";
+      case 145:
+        return "F";
+      case 162:
+        return "E";
+      default:
+        return "Desconocida";
+    }
+  } else if (clave == "C3raLinea") { 
+    switch (posicion) {
+      case -46:
+        return "B";
+      case -29:
+        return "A";
+      case -12:
+        return "G";
+      case 5:
+        return "F";
+      case 22:
+        return "E";
+      case 39:
+        return "D";
+      case 57:
+        return "C";
+      case 74:
+        return "B";
+      case 93:
+        return "A";
+      case 109:
+        return "G";
+      case 127:
+        return "F";
+      case 145:
+        return "E";
+      case 162:
+        return "D";
       default:
         return "Desconocida";
     }

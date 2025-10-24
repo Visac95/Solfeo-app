@@ -22,7 +22,7 @@ const posiciones = [-46, -29, -12, 5, 22, 39, 57, 74, 93, 109, 127, 145, 162]; /
 
 
 // Genera notas aleatorias dentro del pentagrama
-const generarNotasAleatorias = (cantidad) => {
+function generarNotasAleatorias (cantidad) {
   for (let i = 0; i < cantidad; i++) {
     const notaNueva = document.createElement("div");
     document.querySelector(".pentagrama").appendChild(notaNueva);
@@ -86,5 +86,8 @@ window.addEventListener("resize", () => {
   limpiarNotas(); // aquí llamamos a la función que limpia y genera notas
 });
 
-generarNotasAleatorias(nBPentagrama);// generar las notas iniciales
+ // generar las notas iniciales
+ setTimeout(() => {
+   generarNotasAleatorias(nBPentagrama);;
+ }, 10);
 console.log("✅ RENDERER FUNCIONANDO");
