@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', async () => {
+  await preloadNotas(); // Carga los audios antes de usarlos
+  console.log('Notas precargadas');
+
+  const boton = document.getElementById('btnPlay');
+
+  boton.addEventListener('click', () => {
+    playNota('C'); // Toca la nota C4
+  });
+});
+
+
+
 const btnIniciar = document.getElementById("btnIniciar");
 const pantallaInicio = document.getElementById("pantallaInicio");
 const pantallaPentagrama = document.getElementById("pantallaPentagrama");
