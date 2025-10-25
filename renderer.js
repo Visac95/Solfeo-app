@@ -1,15 +1,3 @@
-document.addEventListener('DOMContentLoaded', async () => {
-  await preloadNotas(); // Carga los audios antes de usarlos
-  console.log('Notas precargadas');
-
-  const boton = document.getElementById('btnPlay');
-
-  boton.addEventListener('click', () => {
-    playNota('C'); // Toca la nota C4
-  });
-});
-
-
 
 const btnIniciar = document.getElementById("btnIniciar");
 const pantallaInicio = document.getElementById("pantallaInicio");
@@ -54,7 +42,8 @@ function generarNotasAleatorias(cantidad) {
     // Guardamos la referencia en el objeto notas con propiedades adicionales
     notas["nota" + i] = {
       obj: notaNueva, // referencia al div
-      nombre: notacionAm(posiciones[indicePosicion]), // nombre de la nota, por ejemplo 'Do'
+      nombre: notacionAm(posiciones[indicePosicion]),
+      octava: actual8va // nombre de la nota, por ejemplo 'Do'
     };
     notascreadas++;
   }
@@ -88,7 +77,7 @@ const limpiarNotas = () => {
   let valorActual =
     parseInt(notas["nota" + notaActual].obj.style.left, 10) + 10; // 1️⃣ Convertir "100px" a número
   lineaVPentagrama.style.left = valorActual + "px"; // 3️⃣ Asignamos de nuevo con 'px'
-  console.log(notas["nota" + notaActual].nombre);
+  //console.log(notas["nota" + notaActual].nombre);
 };
 
 // Escuchar cambios en el tamaño de la ventana
