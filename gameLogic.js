@@ -1,4 +1,4 @@
-var clave = "G";
+var clave = "C4taLinea"; //G F C3raLinea C4taLinea
 
 function eligio(btn) {
   cambiaColor(btn);
@@ -87,7 +87,7 @@ function notacionAm (posicion) {
       default:
         return "Desconocida";
     }
-  } else if (clave == "C3raLinea") { 
+  } else if (clave == "C3taLinea") { 
     switch (posicion) {
       case -46:
         return "B";
@@ -115,6 +115,38 @@ function notacionAm (posicion) {
         return "E";
       case 162:
         return "D";
+      default:
+        return "Desconocida";
+    }
+  }
+  else if (clave == "C4taLinea") {
+    switch (posicion) {
+      case -46:
+        return "G";
+      case -29:
+        return "F";
+      case -12:
+        return "E";
+      case 5:
+        return "D";
+      case 22:
+        return "C";
+      case 39:
+        return "B";
+      case 57:
+        return "A";
+      case 74:
+        return "G";
+      case 93:
+        return "F";
+      case 109:
+        return "E";
+      case 127:
+        return "D";
+      case 145:
+        return "C";
+      case 162:
+        return "B";
       default:
         return "Desconocida";
     }

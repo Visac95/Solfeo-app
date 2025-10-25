@@ -20,9 +20,8 @@ const lineaVPentagrama = document.createElement("div");
 //const lineaAdicional = document.querySelector(".linea-adicional");
 const posiciones = [-46, -29, -12, 5, 22, 39, 57, 74, 93, 109, 127, 145, 162]; // líneas y espacios
 
-
 // Genera notas aleatorias dentro del pentagrama
-function generarNotasAleatorias (cantidad) {
+function generarNotasAleatorias(cantidad) {
   for (let i = 0; i < cantidad; i++) {
     const notaNueva = document.createElement("div");
     document.querySelector(".pentagrama").appendChild(notaNueva);
@@ -47,11 +46,12 @@ function generarNotasAleatorias (cantidad) {
     notascreadas++;
   }
 
-  console.log("Notas creadas:", notascreadas, "estas son", notas);
+  //console.log("Notas creadas:", notascreadas, "estas son", notas);
   lineaVPentagrama.classList.add("linea-vertical-pentagrama");
   document.querySelector(".pentagrama").appendChild(lineaVPentagrama);
   //console.log(pentagramaWidth);
-};
+  claveStyle();
+}
 
 const limpiarNotas = () => {
   // eliminar todos los divs del pentagrama
@@ -86,8 +86,10 @@ window.addEventListener("resize", () => {
   limpiarNotas(); // aquí llamamos a la función que limpia y genera notas
 });
 
- // generar las notas iniciales
- setTimeout(() => {
-   generarNotasAleatorias(nBPentagrama);;
- }, 10);
+// generar las notas iniciales
+setTimeout(() => {
+  generarNotasAleatorias(nBPentagrama);
+  
+}, 10);
+
 console.log("✅ RENDERER FUNCIONANDO");

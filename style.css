@@ -81,15 +81,14 @@ h1 {
   border: 2px solid var(--blanco);
   border-radius: 10px;
 }
-
-.clave-sol {
+/*
+.clave {
   position: absolute;
-  font-size: 120px;
+  height: 180px;
   left: 30px;
-  top: -5px;
-  color: var(--blanco);
+  top: -20px;
 }
-
+*/
 .nota {
   position: absolute;
   width: 25px;
@@ -121,7 +120,7 @@ h1 {
 }
 
 .botones-notas-container {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .btnNotas {
