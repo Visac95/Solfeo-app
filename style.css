@@ -30,6 +30,7 @@ body {
   background-color: var(--fondo);
   text-align: center;
   margin-top: 40px;
+  color: var(--blanco);
 }
 
 #pantallaInicio{
@@ -81,14 +82,7 @@ h1 {
   border: 2px solid var(--blanco);
   border-radius: 10px;
 }
-/*
-.clave {
-  position: absolute;
-  height: 180px;
-  left: 30px;
-  top: -20px;
-}
-*/
+
 .nota {
   position: absolute;
   width: 25px;

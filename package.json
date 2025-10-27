@@ -8,5 +8,10 @@
   },
   "scripts": {
     "start": "electron ."
+  },
+  "dependencies": {
+    "@google-cloud/speech": "^7.2.1",
+    "mic": "^2.1.2",
+    "node-record-lpcm16": "^1.0.1"
   }
 }

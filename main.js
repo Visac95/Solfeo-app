@@ -13,7 +13,7 @@ function createWindow() {
     //fullscreen: true,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
-      nodeIntegration: true, // 🚫 no habilitamos require() en el renderer
+      nodeIntegration: false, // 🚫 no habilitamos require() en el renderer
       contextIsolation: true, // ✅ obligatorio para seguridad
     },
   });
@@ -23,3 +23,7 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
+
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') app.quit();
+});
