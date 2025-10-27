@@ -131,3 +131,16 @@ h1 {
 button.presionado {
   background-color: var(--azul);
 }
+
+.selectorClaveConteiner{
+  margin: 50px;
+  padding-top: 200px;
+  height: 100px;
+}
+
+.selectclave{
+  border: none;
+  size: 50px;
+  background-color: var(--negro);
+  color: var(--verde);
+}

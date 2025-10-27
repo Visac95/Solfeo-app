@@ -207,4 +207,11 @@ function notacionAm (posicion) {
   }
 };
 
+function cambiaClave() {
+  var selectClave = document.getElementById("selectClave");
+  clave = selectClave.value;
+  console.log("Clave cambiada a: " + clave);
+  limpiarNotas();
+}
+
 console.log("✅ GAMELOGIC.JS FUNCIONANDO");
