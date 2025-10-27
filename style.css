@@ -33,7 +33,7 @@ body {
   color: var(--blanco);
 }
 
-#pantallaInicio{
+#pantallaInicio {
   display: grid;
   place-items: center; /* centra vertical y horizontal */
   height: 90vh;
@@ -132,15 +132,13 @@ button.presionado {
   background-color: var(--azul);
 }
 
-.selectorClaveConteiner{
+#selectorClaveConteiner {
   margin: 50px;
   padding-top: 200px;
   height: 100px;
+  font-size: 50px;
 }
 
-.selectclave{
-  border: none;
-  size: 50px;
-  background-color: var(--negro);
-  color: var(--verde);
+#btnCambiarClave{
+  
 }
