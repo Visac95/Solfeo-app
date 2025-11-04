@@ -140,5 +140,9 @@ button.presionado {
 }
 
 #btnCambiarClave{
-  
+    font-size: 50px;
+  border: var(--verde) 3px solid;
+  border-radius: 6px;
+  background-color: var(--negro);
+  color: var(--blanco);
 }
