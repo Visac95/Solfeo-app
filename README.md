@@ -37,7 +37,7 @@ npm install
 npm start
 ```
 
-##🧩 Project Structure
+## 🧩 Project Structure
 Solfeo-app/
 │
 ├── main.js          # Electron main process
@@ -49,12 +49,12 @@ Solfeo-app/
 ├── style.css        # UI styling
 └── package.json     # Project configuration
 
-##🧠 Overview
+## 🧠 Overview
 
 The application dynamically generates musical notes positioned on a staff.
 Users must correctly identify each note, reinforcing sight-reading skills through repetition and immediate feedback.
 
 The architecture separates the Electron main process from the renderer process, maintaining a structured desktop application setup.
 
-##📫 Author
+## 📫 Author
 Created by Samuel Ararat
